@@ -4,6 +4,11 @@ const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
 const prefix = "6";
 
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+
 const devs = ["512065633488470036"]
  
 const adminprefix = "6";
